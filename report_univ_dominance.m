@@ -1,0 +1,43 @@
+%mean_prop_xGLDy = mean(prop_xGLDy);
+%mean_prop_yGLDx = mean(prop_yGLDx);
+
+mean_overall_xFSDy = num2str(mean_overall_xFSDy,'%.4f')
+max_overall_xFSDy = num2str(max_overall_xFSDy,'%.4f')
+min_overall_xFSDy = num2str(min_overall_xFSDy,'%.4f')
+mean_overall_yFSDx = num2str(mean_overall_yFSDx,'%.4f')
+max_overall_yFSDx = num2str(max_overall_yFSDx,'%.4f')
+min_overall_yFSDx = num2str(min_overall_yFSDx,'%.4f')
+mean_overall_xFSDy_10lowest = num2str(mean_overall_xFSDy_10lowest,'%.4f')
+max_overall_xFSDy_10lowest = num2str(max_overall_xFSDy_10lowest,'%.4f')
+min_overall_xFSDy_10lowest = num2str(min_overall_xFSDy_10lowest,'%.4f')
+mean_overall_yFSDx_10lowest = num2str(mean_overall_yFSDx_10lowest,'%.4f')
+max_overall_yFSDx_10lowest = num2str(max_overall_yFSDx_10lowest,'%.4f')
+min_overall_yFSDx_10lowest = num2str(min_overall_yFSDx_10lowest,'%.4f')
+
+
+mean_overall_xGLDy = num2str(mean_overall_xGLDy,'%.4f')
+max_overall_xGLDy  = num2str(max_overall_xGLDy,'%.4f')
+min_overall_xGLDy = num2str(min_overall_xGLDy,'%.4f')
+mean_overall_yGLDx = num2str(mean_overall_yGLDx,'%.4f')
+max_overall_yGLDx = num2str(max_overall_yGLDx,'%.4f')
+min_overall_yGLDx = num2str(min_overall_yGLDx,'%.4f')
+mean_overall_xGLDy_10lowest = num2str(mean_overall_xGLDy_10lowest,'%.4f')
+max_overall_xGLDy_10lowest = num2str(max_overall_xGLDy_10lowest,'%.4f')
+min_overall_xGLDy_10lowest = num2str(min_overall_xGLDy_10lowest,'%.4f')
+mean_overall_yGLDx_10lowest = num2str(mean_overall_yGLDx_10lowest,'%.4f')
+max_overall_yGLDx_10lowest = num2str(max_overall_yGLDx_10lowest,'%.4f')
+min_overall_yGLDx_10lowest = num2str(min_overall_yGLDx_10lowest,'%.4f')
+
+mean_overall_xLDy = num2str(mean_overall_xLDy,'%.4f')
+max_overall_xLDy = num2str(max_overall_xLDy,'%.4f')
+min_overall_xLDy = num2str(min_overall_xLDy,'%.4f')
+mean_overall_yLDx = num2str(mean_overall_yLDx,'%.4f')
+max_overall_yLDx = num2str(max_overall_yLDx,'%.4f')
+min_overall_yLDx = num2str(min_overall_yLDx,'%.4f')
+mean_overall_xLDy_10lowest = num2str(mean_overall_xLDy_10lowest,'%.4f')
+max_overall_xLDy_10lowest = num2str(max_overall_xLDy_10lowest,'%.4f')
+min_overall_xLDy_10lowest = num2str(min_overall_xLDy_10lowest,'%.4f')
+mean_overall_yLDx_10lowest = num2str(mean_overall_yLDx_10lowest,'%.4f')
+max_overall_yLDx_10lowest = num2str(max_overall_yLDx_10lowest,'%.4f')
+min_overall_yLDx_10lowest = num2str(min_overall_yLDx_10lowest,'%.4f')
+
