@@ -1,6 +1,6 @@
 function [quantile_matrix_x,GLD_matrix_x,LD_matrix_x,den_pm_store,M_store,alpha_store,mean_store,gini_store]=infmix_gamma_function(income_data)
-
-
+%this function generates posterior draws using MCMC method for Lorenz and stochastic dominance comparisons.
+%Please see the paper for details on MCMC sampling scheme used.
 %load('data_dominance_paper.mat');
 
 Ngrid = 1000;
