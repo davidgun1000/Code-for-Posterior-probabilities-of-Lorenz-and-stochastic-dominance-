@@ -1,5 +1,6 @@
 function [obs_FPBB]=generate_pseudo_representative(income_data,sampling_weight,n)
-
+    %this function generates the pseudo representative samples using Weighted Bayesian Bootstrap algorithm
+    
     N=600000; %this must be set to a really big number
     l_boot=zeros(n,1);
     Nnn = (N-n)/n;
