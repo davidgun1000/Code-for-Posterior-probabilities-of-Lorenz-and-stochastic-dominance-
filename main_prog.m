@@ -1,17 +1,17 @@
-num_FPBB=200;
-load('income_overall_2001_used.mat');
-load('income_overall_2006_used.mat');
+num_FPBB=200; % specify the number of iterations for the Bayesian bootstrap algorithm
+load('income_overall_2001_used.mat'); %load the data, the user needs to supply the data
+load('income_overall_2006_used.mat'); %load the data, the user needs to supply the data
 
-income_x=income_overall_2001_CPI;
-samplingweight_x=weight_overall_2001;
-n_x=length(income_x);
+income_x=income_overall_2001_CPI; % the income data
+samplingweight_x=weight_overall_2001; % the sampling weight provided by the data
+n_x=length(income_x); % the number of observations
 
-income_y=income_overall_2006_CPI;
-samplingweight_y=weight_overall_2006;
-n_y=length(income_y);
+income_y=income_overall_2006_CPI; % the income data
+samplingweight_y=weight_overall_2006; % the sampling weight provided by the data
+n_y=length(income_y); % the number of observations
 
 %parpool(28)
-for j=1:num_FPBB
+for j=1:num_FPBB % to obtain the posterior draws for Lorenz and stochastic dominance comparisons
     
     [obs_FPBB_x]=generate_pseudo_representative(income_x,samplingweight_x,n_x);
     [quantile_matrix_x_temp(:,:,j),GLD_matrix_x_temp(:,:,j),LD_matrix_x_temp(:,:,j),den_pm_x_temp(:,:,j),M_x_temp(:,:,j),alpha_x_temp(:,:,j),mean_x_temp(:,:,j),...
@@ -66,7 +66,8 @@ for j=1:num_FPBB
     LD_matrix_y=[LD_matrix_y;LD_matrix_y_temp(:,:,j)];
 end
 m = size(mean_x,1);
-for j = 1:1000
+%stochastic and Lorenz dominance comparisons. See the paper for further detail. 
+for j = 1:1000 
     
     R = (randperm(m))';
     for i = 1:m
@@ -115,6 +116,8 @@ for j = 1:1000
     overall_yFSDx_10lowest(j,1) = mean(prod(yFSDx(:,1:100),2));
     
 end
+
+%get the estimates of the posterior probabilities of dominance. 
 
 mean_prop_xGLDy = mean(prop_xGLDy);
 mean_prop_yGLDx = mean(prop_yGLDx);
