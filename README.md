@@ -4,5 +4,8 @@ David Gunawan, William Griffiths, and Duangkamon Chotikapanich (2021) Economic R
 The main code is main_prog.m.
 The main code will generate the posterior probabilities of Lorenz and stochastic dominance. 
 Please read the paper for more information.
+
+
 The user needs to supply their own data.
+You need two years of income data with their sampling weights.
 
