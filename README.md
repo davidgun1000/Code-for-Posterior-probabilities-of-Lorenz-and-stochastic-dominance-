@@ -7,5 +7,10 @@ Please read the paper for more information.
 
 
 The user needs to supply their own data.
-You need two years of income data with their sampling weights.
+You need two years of income data with their sampling weights and supply them in the form of two .mat files.
+
+In each .mat file, you need two variables, one for income variable and one for the sampling weight. The main_prog.m will give the posterior probabilities of Lorenz and stochastic dominance. 
+
+
+ 
 
