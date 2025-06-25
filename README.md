@@ -1,15 +1,43 @@
 # Code-for-Posterior-probabilities-of-Lorenz-and-stochastic-dominance-
-This is the code for the paper "Posterior probabilities of Lorenz and stochastic dominance for Australian income distributions"
-David Gunawan, William Griffiths, and Duangkamon Chotikapanich (2021) Economic Record.
-The main code is main_prog.m.
-The main code will generate the posterior probabilities of Lorenz and stochastic dominance. 
-Please read the paper for more information.
+This repository contains the MATLAB code for the paper:
 
+"Posterior Probabilities of Lorenz and Stochastic Dominance for Australian Income Distributions"
+David Gunawan, William Griffiths, and Duangkamon Chotikapanich (2021)
+The Economic Record, 97(317), pp. 397–419.
 
-The user needs to supply their own data.
-You need two years of income data with their sampling weights and supply them in the form of two .mat files.
+🔧 Main Script
+The main script is:
 
-In each .mat file, you need two variables, one for income variable and one for the sampling weight. The main_prog.m will give the posterior probabilities of Lorenz and stochastic dominance. income_overall_2001_used.mat and income_overall_2010_used.mat are the examples of required data for the program. They are simulated data.
+main_prog.m — Computes the posterior probabilities of Lorenz and stochastic dominance between two income distributions.
+
+Please refer to the paper for full methodological details and interpretation of results.
+
+📂 Input Requirements
+The user must supply their own data in the form of two .mat files — one for each year (or group) being compared. Each file should contain:
+
+A variable representing income
+
+A variable representing the corresponding sampling weights
+
+Example:
+Example files included in this repository:
+
+income_overall_2001_used.mat
+
+income_overall_2010_used.mat
+
+These files contain simulated data to illustrate the required format. You should replace them with your own income and weight data for actual analysis.
+
+📝 Notes
+The code assumes that both income and sampling weights are stored as column vectors.
+
+The script outputs posterior probabilities for:
+
+Lorenz dominance
+
+First-order stochastic dominance
+
+Second-order stochastic dominance
 
 
  
